@@ -6,28 +6,16 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
-    int a, b, max, min,temp;
-    int i = 1;
+    int a, b;
     cin >> a >> b;
-    if (a > b)
-    {
-        max = a;
-        min = b;
+    if(a%b==0){
+        cout << "Multiples";
     }
-    else
-    {
-        max = b;
-        min = a;
+    else if(b%a == 0){
+        cout << "Multiples";
     }
-    while (i < max)
-    {
-        temp = min * i;
-        i++;
-        if(temp == max){
-            cout << "Multiples";
-            return 0;
-        }
-    }
+    else{
         cout << "No Multiples";
+    }
     return 0;
 }
