@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 int main()
@@ -6,18 +7,12 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
-    int n;
-    cin >> n;
-    int ar[n];
+    char str1[1001];
+    cin.getline(str1, 1001);
 
-    for (int i = 0; i < n; i++)
+    for (int j = 0; j < strlen(str1); j++)
     {
-        cin >> ar[i];
-    }
-
-    for (int j = 0; j < n; j++)
-    {
-        if (ar[j] != ar[n - j - 1])
+        if (str1[j] != str1[strlen(str1) - j - 1])
         {
             cout << "NO" << endl;
             return 0;
