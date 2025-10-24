@@ -3,7 +3,7 @@
 
 int main()
 {
-    char str[10001];
+    char str[10000001];
     scanf("%s", &str);
 
     int l = strlen(str);
@@ -20,8 +20,9 @@ int main()
 
     for (int j = 0; j < 26; j++)
     {
-        if(fre[j] != 0){
-            printf("%c - %d\n",alpha[j], fre[j]);
+        if (fre[j] != 0)
+        {
+            printf("%c : %d\n", alpha[j], fre[j]);
         }
     }
     return 0;
