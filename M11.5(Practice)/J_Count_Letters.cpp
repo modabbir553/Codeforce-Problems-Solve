@@ -1,12 +1,12 @@
 #include <iostream>
 #include <cstring>
 using namespace std;
+char str1[10000001];
 
 int main() {
 ios_base::sync_with_stdio(false);
 cin.tie(0);
 cout.tie(0);
-    char str1[10000001];
     cin >> str1;
 
     int l = strlen(str1);
